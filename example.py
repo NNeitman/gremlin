@@ -1,4 +1,8 @@
+import logging
 import discord
+import os
+
+log = logging.getLogger(__name__)
 
 class MyClient(discord.Client):
     async def on_ready(self):
