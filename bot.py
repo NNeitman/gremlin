@@ -15,6 +15,11 @@ async def ping(ctx):
 async def ding(ctx):
     await ctx.send('dong')
 
+@bot.command()
+async def egg(ctx):
+    await ctx.send('https://www.youtube.com/watch?v=XNyUALnj8V0')
+
+
 try:
     token = os.environ['DISCORD_GREMLIN_TOKEN']
     bot.run(token)

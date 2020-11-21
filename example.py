@@ -21,6 +21,9 @@ class MyClient(discord.Client):
             await message.channel.send('dong')
             print('Message from {0.author}: {0.content}'.format(message))
 
+        if message.content == 'egg':
+            await message.channel.send('https://www.youtube.com/watch?v=XNyUALnj8V0')
+            print('Message from {0.author}: {0.content}'.format(message))
 try:
     token = os.environ['DISCORD_GREMLIN_TOKEN']
     client = MyClient()
