@@ -1,4 +1,5 @@
 import discord
+import Exception
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -17,7 +18,7 @@ try:
     token = os.environ['DISCORD_GREMLIN_TOKEN']
     client = MyClient()
     client.run(token)
-except Error as e:
+except Exception as e:
     log.error("Server died")
     log.error(e)
     
