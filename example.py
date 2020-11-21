@@ -1,5 +1,4 @@
 import discord
-import Exception
 
 class MyClient(discord.Client):
     async def on_ready(self):
