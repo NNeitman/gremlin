@@ -14,7 +14,7 @@ async def ping(ctx):
 try:
     token = os.environ['DISCORD_GREMLIN_TOKEN']
     bot.run(token)
-except Error as e:
+except RuntimeError as e:
     log.error("Bot died")
     log.error(e)
     
