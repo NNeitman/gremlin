@@ -1,6 +1,8 @@
 import logging
+import os
 import discord
 from discord.ext import commands
+
 
 log = logging.getLogger(__name__)
 bot = commands.Bot(command_prefix='!')
