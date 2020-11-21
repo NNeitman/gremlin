@@ -18,7 +18,7 @@ try:
     token = os.environ['DISCORD_GREMLIN_TOKEN']
     client = MyClient()
     client.run(token)
-except Exception as e:
+except RuntimeError as e:
     log.error("Server died")
     log.error(e)
     
