@@ -11,6 +11,10 @@ bot = commands.Bot(command_prefix='!')
 async def ping(ctx):
     await ctx.send('pong')
 
+@bot.command()
+async def ding(ctx):
+    await ctx.send('dong')
+
 try:
     token = os.environ['DISCORD_GREMLIN_TOKEN']
     bot.run(token)
