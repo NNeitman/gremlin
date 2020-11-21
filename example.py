@@ -17,6 +17,10 @@ class MyClient(discord.Client):
             await message.channel.send('pong')
             print('Message from {0.author}: {0.content}'.format(message))
 
+        if message.content == 'ding':
+            await message.channel.send('dong')
+            print('Message from {0.author}: {0.content}'.format(message))
+
 try:
     token = os.environ['DISCORD_GREMLIN_TOKEN']
     client = MyClient()
